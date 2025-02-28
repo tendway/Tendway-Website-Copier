@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tendway Website Copier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="neon-title">Tendway Website Copier</h1>
+        <p class="description">Copy any website effortlessly with HTTrack technology.</p>
+        <input type="text" id="url" placeholder="Enter website URL">
+        <button class="download-btn" onclick="downloadSite()">Download</button>
+        <p id="status"></p>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+
